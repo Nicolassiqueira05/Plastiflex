@@ -102,10 +102,9 @@ function moveLeft() {
 
 render()
 
-const hamburguer = document.querySelector(".hamburguer")
-const navbar = document.querySelector(".navbar-container")
+const hamburguer = document.querySelector("#hamburguer");
+const nav = document.querySelector(".header-indent");
 
-hamburguer.onclick = () => {
-    navbar.style.display =
-        navbar.style.display === "block" ? "none" : "block"
-}
+hamburguer.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
