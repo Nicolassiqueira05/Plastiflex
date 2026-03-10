@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastiflex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav class="header-indent">
+            <div class="logo-container">
+                <img class="logo" src="Media/Logo/Logo_Header2.png" alt="">
+            </div>
+
+            <button id="hamburguer">
+                <span></span>
+            </button>
+            
+            <div class="navbar-container">
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./galeria.html">Produtos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <div id="login-container">
+                <div id="login-indent" style="display: flex; justify-content: center; align-items: center;">
+                    <h3>Recuperação de senha</h3>
+                    <p>Caso tenha esquecido sua senha entre em contato com seu supervisor para que seja providenciado uma nova</p>
+                    <a href="./login.html">Retornar ao Login</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer-indent">
+
+        <div class="footer-info-container">
+
+            <div class="footer-info">
+                <h3>Endereço</h3>
+                <p>Av Monte Magno, 1027</p>
+                <p>São Paulo - SP</p>
+            </div>
+
+            <div class="footer-info">
+                <h3>Telefone</h3>
+                <p>(11) 99999-9999</p>
+                <p>(11) 3972-4557</p>
+            </div>
+
+            <div class="footer-info">
+                <h3>Email</h3>
+                <p>admnistrativo@plastiflex.com.br</p>
+            </div>
+
+            <div class="footer-info">
+                <h3>Horário</h3>
+                <p>Segunda – Sexta</p>
+                <p>08:00 – 18:00</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Plastiflex. Todos os direitos reservados.</p>
+        </div>
+
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <script>
+        let btn = document.querySelector("#submit-button")
+    let usuario = document.querySelector('input[placeholder="Usuário"]')
+    let senha = document.querySelector('input[placeholder="Senha"]')
+
+    btn.addEventListener("click", (e) => {
+
+
+        if(usuario.value !== "" && senha.value !== ""){
+            window.alert("Senha incorreta")
+        }
+
+    })
+    </script>
+</body>
+</html>
