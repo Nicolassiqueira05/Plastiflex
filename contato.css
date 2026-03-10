@@ -26,6 +26,7 @@ color:#555;
 display:flex;
 gap:60px;
 align-items:flex-start;
+margin-bottom: 60px;
 }
 
 .contato-info{
@@ -133,4 +134,99 @@ transition:0.2s;
 
 .contato-form a:hover{
 background:#005fd1;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 900px){
+
+.contato{
+padding-top:80px;
+}
+
+.contato-container{
+flex-direction:column;
+gap:40px;
+justify-content: center;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.contato-info{
+grid-template-columns:1fr 1fr;
+}
+
+.contato-title{
+font-size:32px;
+}
+
+}
+
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width:600px){
+
+.contato-indent{
+width:90%;
+}
+
+.contato-title{
+font-size:28px;
+}
+
+.contato-subtitle{
+font-size:14px;
+margin-bottom:40px;
+}
+
+.contato-info{
+grid-template-columns:1fr;
+}
+
+.info-box{
+margin-top:10px;
+}
+
+.contato-form{
+padding:20px;
+}
+
+.contato-form input,
+.contato-form textarea{
+font-size:13px;
+padding:10px;
+}
+
+.contato-form button,
+.contato-form a{
+font-size:14px;
+padding:10px;
+}
+
+}
+
+
+/* ========================= */
+/* CELULAR PEQUENO */
+/* ========================= */
+
+@media (max-width:400px){
+
+.contato-title{
+font-size:24px;
+}
+
+.contato-subtitle{
+font-size:13px;
+}
+
+.contato-form{
+padding:15px;
+}
+
 }
