@@ -102,9 +102,12 @@ function moveLeft() {
 
 render()
 
+<<<<<<< HEAD
+=======
 const hamburguer = document.querySelector("#hamburguer");
 const nav = document.querySelector(".header-indent");
 
 hamburguer.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
+>>>>>>> 69c54383f1a4995d8619a7474d7b5d361208430f
